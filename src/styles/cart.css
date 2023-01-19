@@ -1,0 +1,49 @@
+@tailwind utilities;
+
+.checkout-container {
+    @apply py-3 px-5 w-full max-h-[550px] max-w-[600px] grid gap-y-4 overflow-scroll;
+}
+
+.checkout {
+    @apply p-[10px] h-[120px] grid gap-4 grid-flow-col rounded-[5px];
+    @apply grid-cols-[max-content_1fr] shadow-100 border border-light-secondary;
+}
+
+.checkout-info {
+    @apply grid gap-y-4;
+}
+
+/* ---checkout-image-quantity--- */
+
+.checkout-image {
+    @apply h-[100px] w-[100px] object-cover rounded-[5px] self-center;
+}
+
+.checkout-quantity {
+    @apply h-[40px] flex gap-x-3 items-center;
+}
+
+/* ---checkout-name-price-quantity--- */
+.checkout-detail {
+    @apply flex justify-between;
+}
+
+.checkout-name {
+    @apply font-Poppins font-medium text-base text-dark-primary;
+}
+
+.checkout-price {
+    @apply font-Poppins font-medium text-sm text-red-secondary;
+}
+
+.product-quantity {
+    @apply p-[5px] h-[30px] w-[40px] rounded-[5px] bg-light-secondary;
+    @apply flex justify-center items-center text-center;
+    @apply font-Poppins font-medium text-sm text-dark-secondary;
+}
+
+.remove-product {
+    @apply bg-light-primary rounded-md cursor-pointer;
+}
+
+.remove-product:hover, .remove-product:active {@apply bg-light-secondary;}

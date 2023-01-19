@@ -1,0 +1,211 @@
+/* ---category--- */
+
+.category-container {
+  display: grid;
+  grid-template-rows: max-content max-content;
+  row-gap: 1rem
+}
+
+.category {
+  display: grid;
+  row-gap: 0.75rem
+}
+
+.category-title {
+  font-family: Poppins, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity))
+}
+
+/* ---product--- */
+
+.product-container {
+  display: grid;
+  height: 190px;
+  max-width: 650px;
+  grid-auto-flow: column;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  overflow: scroll;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr))
+}
+
+.product {
+  height: 170px;
+  width: 140px;
+  overflow: hidden;
+  border-radius: 5px;
+  --tw-shadow: 0 0 30px 0 rgba(69, 69, 69, 0.11);
+  --tw-shadow-colored: 0 0 30px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(230 230 230 / var(--tw-border-opacity))
+}
+
+.product-image {
+  display: grid;
+  height: 122px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 230 230 / var(--tw-bg-opacity));
+  background-size: cover;
+  background-position: center
+}
+
+/* ---product-detail--- */
+
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px
+}
+
+.product-name {
+  height: 20px;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Poppins, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity))
+}
+
+.product-price {
+  font-family: Poppins, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(235 71 90 / var(--tw-text-opacity))
+}
+
+/* ---product-rating--- */
+
+.product-rating {
+  height: 25px;
+  background-color: rgba(55, 55, 55, 0.5);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Poppins, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(230 230 230 / var(--tw-text-opacity));
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  align-self: flex-end
+}
+
+.product-rating img {
+  max-width: 15px
+}
+
+/* product-detail */
+
+/* container */
+
+.product-detail-container {
+  display: grid;
+  max-width: 600px;
+  row-gap: 0.75rem
+}
+
+/* detail */
+
+.detail {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: flex-start;
+  justify-content: space-between
+}
+
+/* detail name-price and rating */
+
+.detail-name-price {
+  display: grid;
+  row-gap: 5px
+}
+
+.detail-rating {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  padding: 0.25rem
+}
+
+/* detail name and price */
+
+.detail-name {
+  font-family: Poppins, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity))
+}
+
+.detail-price {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(230 25 49 / var(--tw-text-opacity))
+}
+
+/* rating-point and detail description */
+
+.rating-point {
+  font-family: Poppins, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(55 55 55 / var(--tw-text-opacity))
+}
+
+.detail-description {
+  font-family: Poppins, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(55 55 55 / var(--tw-text-opacity))
+}
+
+.detail-image {
+  min-height: 320px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center
+}
+
+.main-container-detail {
+  display: grid;
+  min-height: 730px;
+  grid-template-rows: max-content;
+  justify-items: center;
+  row-gap: 2rem;
+  padding: 1.25rem;
+  position: absolute;
+  top: 115px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}

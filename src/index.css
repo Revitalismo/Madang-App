@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+
+.loader {
+    @apply mx-auto h-[48px] w-[48px] inline-block box-border;
+    @apply border-dark-secondary border-[5px] border-b-transparent rounded-[50%];
+    @apply animate-[rotation_1s_linear_infinite];
+}
+
+.btn-primary {
+    @apply p-[10px] h-[40px] min-w-[120px] max-w-[120px] bg-red-primary rounded-[10px];
+    @apply font-Poppins font-medium text-sm text-light-primary;
+}
+
+.btn-secondary {
+    @apply p-[10px] h-[40px] min-w-[120px] max-w-[120px] bg-light-secondary rounded-[10px];
+    @apply font-Poppins font-medium text-sm text-dark-secondary;
+}
+
+.btn-primary:active {
+    @apply bg-[#bf0f24];
+}
+
+.btn-secondary:active {
+    @apply bg-[#c5c5c5];
+}
+
+.btn-quantity:active {
+    @apply bg-light-secondary rounded-md;
+}
+
+.status-product-empty {
+    @apply max-w-[450px] py-28 px-3 grid justify-items-center;
+    @apply font-Poppins font-medium text-sm text-dark-secondary text-center;
+    @apply absolute top-20;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 

@@ -1,0 +1,49 @@
+.setting-container {
+  display: grid;
+  width: 100%;
+  max-width: 500px;
+  row-gap: 1rem
+}
+
+.setting {
+  height: 70px;
+  border-radius: 10px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(230 230 230 / var(--tw-border-opacity));
+  --tw-shadow: 0 0 30px 0 rgba(69, 69, 69, 0.11);
+  --tw-shadow-colored: 0 0 30px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.setting-icon, .open-icon {
+  max-width: 45px
+}
+
+.setting-detail {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between
+}
+
+.setting-name {
+  font-family: Poppins, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(55 55 55 / var(--tw-text-opacity))
+}
+
+.setting:hover, .setting:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 230 230 / var(--tw-bg-opacity))
+}

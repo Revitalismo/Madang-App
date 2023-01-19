@@ -1,0 +1,24 @@
+@tailwind utilities;
+
+.chating {
+    @apply w-full max-w-[500px] grid gap-y-4;
+}
+
+.seller-chating {
+    @apply p-3 w-full max-w-[300px] bg-light-secondary rounded-[10px];
+    @apply font-Poppins font-medium text-dark-secondary text-sm;
+}
+
+.user-chating {
+    @apply p-3 w-full max-w-[300px] bg-red-secondary rounded-[10px] justify-self-end;
+    @apply font-Poppins font-medium text-light-primary text-sm;
+}
+
+.message {
+    @apply h-[45px] w-full max-w-[500px] flex gap-3 items-center justify-between;
+    @apply fixed bottom-[80px] font-Poppins font-medium text-sm text-dark-secondary;
+}
+
+.message-field {
+    @apply p-3 h-full w-full rounded-[10px] bg-light-secondary outline-none;
+}

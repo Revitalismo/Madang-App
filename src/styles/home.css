@@ -1,0 +1,17 @@
+@tailwind utilities;
+
+.main-container {
+    @apply p-5 min-h-[700px] grid grid-rows-[max-content] gap-y-8 justify-items-center;
+    @apply absolute top-[115px] left-0 right-0 overflow-hidden;
+    @apply rounded-2xl bg-light-primary;
+}
+
+/* ---search--- */
+.link-field {
+    @apply p-3 h-[60px] max-w-[320px] flex justify-center rounded-[30px] bg-light-secondary;
+}
+
+.link-search {
+    @apply px-[10px] max-w-[260px] truncate bg-light-secondary outline-none;
+    @apply font-Poppins font-medium text-sm text-dark-secondary;
+}

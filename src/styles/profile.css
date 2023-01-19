@@ -1,0 +1,28 @@
+@tailwind utilities;
+
+.profile-container {
+    @apply py-8 px-[10px] h-[130px] bg-red-secondary;
+    @apply flex justify-center items-start;
+}
+
+.profile-container-two {@apply items-center;}
+
+.cart {@apply max-w-[45px];}
+
+/* ---profile--- */
+.profile {
+    @apply flex items-center gap-x-3;
+}
+
+.profile-image {@apply max-w-[50px];}
+
+.profile-detail {
+    @apply font-Poppins font-medium text-light-primary;
+}
+
+.profile-name {@apply text-base;}
+.profile-balance {@apply text-sm;}
+
+.profile-box {
+    @apply w-full max-w-[650px] flex justify-between items-center;
+}

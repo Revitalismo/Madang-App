@@ -1,0 +1,24 @@
+@tailwind utilities;
+
+.notif-container {
+    @apply w-full max-w-[500px] grid gap-y-4;
+}
+
+.notif {
+    @apply min-h-[90px] p-3 flex gap-x-3 rounded-[10px];
+    @apply bg-light-primary shadow-100 border border-light-secondary;
+}
+
+.notif-icon {@apply max-w-[45px];}
+
+.notif-detail {
+    @apply flex flex-col gap-y-[10px];
+}
+
+.notif-name {
+    @apply font-Poppins font-medium text-sm text-dark-secondary;
+}
+
+.notif-date {
+    @apply font-Poppins font-medium text-xs text-dark-secondary;
+}

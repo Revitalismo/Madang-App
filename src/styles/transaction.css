@@ -1,0 +1,29 @@
+.transaction-container {
+    @apply p-4 h-[80px] bg-light-primary shadow-100 border border-light-secondary;
+    @apply flex items-center gap-x-4;
+    @apply absolute bottom-0 left-0 right-0
+}
+
+.transaction-one, .transaction-two {
+    @apply justify-center;
+}
+
+.transaction-detail {
+    @apply font-Poppins font-medium text-base;
+}
+
+.transaction-title {
+    @apply text-dark-primary;
+}
+
+.transaction-price {
+    @apply text-red-primary;
+}
+
+.transactions-one {
+    @apply w-full max-w-[600px] flex gap-x-3 justify-end;
+}
+
+.transactions-two {
+    @apply w-full max-w-[600px] flex gap-x-3 justify-between;
+}

@@ -1,0 +1,25 @@
+@tailwind utilities;
+
+.setting-container {
+    @apply w-full max-w-[500px] grid gap-y-4;
+}
+
+.setting {
+    @apply p-3 h-[70px] rounded-[10px] bg-light-primary;
+    @apply flex gap-x-3 items-center;
+    @apply shadow-100 border border-light-secondary;
+}
+
+.setting-icon, .open-icon {@apply max-w-[45px];}
+
+.setting-detail {
+    @apply w-full flex items-center justify-between;
+}
+
+.setting-name {
+    @apply font-Poppins font-medium text-dark-secondary text-sm;
+}
+
+.setting:hover, .setting:active {
+    @apply bg-light-secondary;
+}

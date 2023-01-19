@@ -1,0 +1,20 @@
+@tailwind utilities;
+
+/* navbar */
+.navbar-container {
+    @apply p-3 h-[70px] flex justify-evenly;
+    @apply bg-light-primary shadow-100 border border-light-secondary;
+    @apply fixed z-10 bottom-0 left-0 right-0;
+}
+
+.navbar-link {
+    @apply w-full max-w-[700px] flex justify-around;
+}
+
+.link-menu {
+    @apply flex;
+}
+
+.menu-icon {
+    @apply max-w-[35px];
+}

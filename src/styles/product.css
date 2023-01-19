@@ -1,0 +1,101 @@
+@tailwind utilities;
+
+/* ---category--- */
+.category-container {
+    @apply grid gap-y-4 grid-rows-[max-content_max-content];
+}
+
+.category {
+    @apply grid gap-y-3;
+}
+
+.category-title {
+    @apply font-Poppins font-bold text-lg text-dark-primary;
+}
+
+/* ---product--- */
+.product-container {
+    @apply h-[190px] max-w-[650px] grid gap-x-4 grid-flow-col overflow-scroll;
+    @apply grid-cols-[repeat(auto-fit,_minmax(140px,_1fr))];
+}
+
+.product {
+    @apply h-[170px] w-[140px] rounded-[5px] shadow-100 overflow-hidden;
+    @apply border-light-secondary border-[1px] border-solid;
+}
+
+.product-image {
+    @apply h-[122px] grid bg-light-secondary bg-cover bg-center;
+}
+
+/* ---product-detail--- */
+.product-detail {
+    @apply px-[10px] pb-[5px] flex flex-col;
+}
+
+.product-name {
+    @apply h-[20px] max-w-[140px] truncate;
+    @apply font-Poppins font-medium text-sm text-dark-primary;
+}
+
+.product-price {
+    @apply font-Poppins font-medium text-sm text-red-secondary;
+}
+
+/* ---product-rating--- */
+.product-rating {
+    @apply px-[10px] h-[25px] bg-[rgba(55,_55,_55,_0.5)];
+    @apply font-Poppins font-medium text-xs text-light-secondary;
+    @apply self-end flex gap-x-[6px] items-center;
+}
+
+.product-rating img {@apply max-w-[15px];}
+
+/* product-detail */
+/* container */
+.product-detail-container {
+    @apply max-w-[600px] grid gap-y-3;
+}
+
+/* detail */
+.detail {
+    @apply grid grid-flow-col items-start justify-between;
+}
+
+/* detail name-price and rating */
+.detail-name-price {
+    @apply grid gap-y-[5px];
+}
+
+.detail-rating {
+    @apply p-1 flex gap-x-[5px];
+}
+
+/* detail name and price */
+.detail-name {
+    @apply font-Poppins font-medium text-lg text-dark-primary;
+}
+
+.detail-price {
+    @apply font-Poppins font-medium text-base text-red-primary;
+}
+
+/* rating-point and detail description */
+.rating-point {
+    @apply font-Poppins font-medium text-sm text-dark-secondary;
+}
+
+.detail-description {
+    @apply font-Poppins font-medium text-sm text-dark-secondary;
+}
+
+.detail-image {
+    @apply min-h-[320px];
+    @apply bg-center bg-cover rounded-[5px];
+}
+
+.main-container-detail {
+    @apply p-5 min-h-[730px] grid grid-rows-[max-content] gap-y-8 justify-items-center;
+    @apply absolute top-[115px] left-0 right-0 overflow-hidden;
+    @apply rounded-2xl bg-light-primary;
+}

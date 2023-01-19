@@ -1,0 +1,108 @@
+.checkout-container {
+  display: grid;
+  max-height: 550px;
+  width: 100%;
+  max-width: 600px;
+  row-gap: 1rem;
+  overflow: scroll;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem
+}
+
+.checkout {
+  display: grid;
+  height: 120px;
+  grid-auto-flow: column;
+  gap: 1rem;
+  border-radius: 5px;
+  padding: 10px;
+  grid-template-columns: max-content 1fr;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(230 230 230 / var(--tw-border-opacity));
+  --tw-shadow: 0 0 30px 0 rgba(69, 69, 69, 0.11);
+  --tw-shadow-colored: 0 0 30px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.checkout-info {
+  display: grid;
+  row-gap: 1rem
+}
+
+/* ---checkout-image-quantity--- */
+
+.checkout-image {
+  height: 100px;
+  width: 100px;
+  align-self: center;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover
+}
+
+.checkout-quantity {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem
+}
+
+/* ---checkout-name-price-quantity--- */
+
+.checkout-detail {
+  display: flex;
+  justify-content: space-between
+}
+
+.checkout-name {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity))
+}
+
+.checkout-price {
+  font-family: Poppins, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(235 71 90 / var(--tw-text-opacity))
+}
+
+.product-quantity {
+  height: 30px;
+  width: 40px;
+  border-radius: 5px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 230 230 / var(--tw-bg-opacity));
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(55 55 55 / var(--tw-text-opacity))
+}
+
+.remove-product {
+  cursor: pointer;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.remove-product:hover, .remove-product:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 230 230 / var(--tw-bg-opacity))
+}
